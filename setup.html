@@ -1,0 +1,46 @@
+<!-- setup.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bot Setup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>Discord Bot Setup</h2>
+
+  <label>Token</label>
+  <input id="token">
+
+  <label>Prefix</label>
+  <input id="prefix" value="!">
+
+  <label>Status</label>
+  <select id="status">
+    <option value="online">online</option>
+    <option value="idle">idle</option>
+    <option value="dnd">dnd</option>
+    <option value="invisible">invisible</option>
+  </select>
+
+  <label>Activity Type</label>
+  <select id="type">
+    <option value="PLAYING">PLAYING</option>
+    <option value="WATCHING">WATCHING</option>
+    <option value="LISTENING">LISTENING</option>
+    <option value="COMPETING">COMPETING</option>
+  </select>
+
+  <label>Activity Text</label>
+  <input id="text">
+
+  <button id="download">Download .env</button>
+
+  <pre id="out"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
